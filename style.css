@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cinzel', sans-serif;
+   background-image:url(Tribe.jpg);
+    color: #E5A93C;
+    line-height: 1.6;
+}
+
+/* Header & Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 8%;
+    background-color: #0a0a0a;
+    border-bottom: 1px solid #222;
+    font-family: 'Cinzel', serif;
+}
+
+header .logo {
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #f5f5f7;
+}
+
+header .logo span {
+    display: block;
+    font-size: 0.9rem;
+    font-family: 'Cinzel', sans-serif;
+    font-weight: 300;
+    color: #D4AF37; /* Elegant Gold */
+    letter-spacing: 1px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #b39359;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 8%;
+    min-height: 80vh;
+    gap: 40px;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 500px;
+}
+
+.hero-content h5 {
+    font-size: 1rem;
+    color: #b39359;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.hero-content h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 3.5rem;
+    line-height: 1.1;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.hero-content h3 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #ccc;
+    margin-bottom: 25px;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    color: #999;
+    margin-bottom: 35px;
+}
+
+.hero-image {
+    flex: 1.2;
+    display: flex;
+    justify-content: center;
+}
+
+.painting-frame {
+    background-color: #1a1510;
+    padding: 25px;
+    border: 15px solid #2d2216;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.7);
+    max-width: 100%;
+}
+
+.painting-frame img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(0.9) contrast(1.1);
+}
+
+.frame-label {
+    text-align: center;
+    font-size: 0.75rem;
+    color: #776548;
+    margin-top: 15px;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+/* Spotlight Section with Video */
+.spotlight {
+    padding: 60px 8%;
+    background-color: #0d0d0d;
+    border-top: 1px solid #1a1a1a;
+}
+
+.spotlight h5 {
+    font-size: 0.9rem;
+    color: #b39359;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.spotlight-text {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.spotlight-text h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.8rem;
+    color: #b39359;
+    margin-bottom: 15px;
+}
+
+.spotlight-text p {
+    color: #aaa;
+    margin-bottom: 30px;
+    font-size: 1.05rem;
+}
+
+
+.video-container {
+    position: relative;
+    width: 98vw;
+    max-width: 1920px; 
+    padding-bottom: 55.125%; 
+    height: 0;
+    background-color: #000;
+    border: 12px solid #2d2216; 
+    box-shadow: 0 25px 55px rgba(0,0,0,0.7);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+   max-width: 1000px;
+    height: 100%;
+    border: 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px;
+    background-color: #0a0a0a;
+    font-size: 0.8rem;
+    color: #555;
+    border-top: 1px solid #1a1a1a;
+}
+
+
+@media (max-width: 1000px) {
+    .hero {
+        flex-direction: column;
+        padding-top: 40px;
+        text-align: center;
+    }
+    .hero-content {
+        max-width: 100%;
+    }
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+    nav ul li {
+        margin: 0 15px;
+    }
+}
